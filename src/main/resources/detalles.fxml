@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="663.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.DetallesController">
+   <children>
+      <ImageView fitHeight="699.0" fitWidth="996.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/fondoTablas.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9933c1" height="74.0" stroke="BLACK" strokeType="INSIDE" width="995.0" />
+      <ImageView fitHeight="63.0" fitWidth="62.0" layoutX="909.0" layoutY="4.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/salir.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="-1.0" layoutY="7.0" prefHeight="34.0" prefWidth="494.0">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/login.png" />
+               </image></ImageView>
+            <Label contentDisplay="CENTER" prefHeight="81.0" prefWidth="158.0" text="Bienvenido--&gt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="usuarioactualpeliculas" contentDisplay="CENTER" prefHeight="98.0" prefWidth="248.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="145.0" layoutY="163.0" prefHeight="479.0" prefWidth="740.0">
+         <children>
+            <GridPane prefHeight="439.0" prefWidth="739.0" style="-fx-background-color: #D3D3D3;" styleClass="detalles" stylesheets="@estilos.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.46661376953125" minWidth="10.0" prefWidth="118.26666259765625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.7333374023438" minWidth="10.0" prefWidth="621.7333374023438" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="152.9333251953125" minHeight="10.0" prefHeight="37.999978637695314" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="299.13336791992185" minHeight="10.0" prefHeight="45.266668701171874" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="374.9333251953125" minHeight="8.199957275390624" prefHeight="48.066674804687494" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="398.7999755859375" minHeight="10.0" prefHeight="62.19999999999999" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="398.7999755859375" minHeight="10.0" prefHeight="56.86669311523437" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="398.7999755859375" minHeight="10.0" prefHeight="46.1999572753906" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="398.7999755859375" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="140.0" text="Titulo">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="140.0" text="Género" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="140.0" text="Año" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="42.0" prefWidth="118.0" text="Descripción" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="140.0" text="Director" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="140.0" text="Estado" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="26.0" prefWidth="118.0" text="Soporte" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbtituloDetalles" prefHeight="55.0" prefWidth="622.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbgeneroDetalles" prefHeight="53.0" prefWidth="622.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbañoDetalles" prefHeight="59.0" prefWidth="622.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbdirectorDetalles" prefHeight="55.0" prefWidth="622.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbestadoDetalles" prefHeight="55.0" prefWidth="622.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbsoporteDetalles" prefHeight="55.0" prefWidth="622.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="txaDescripción" editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="384.0" layoutY="82.0" prefHeight="70.0" prefWidth="217.0" text="Detalles" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="897.0" layoutY="599.0" mnemonicParsing="false" onAction="#volver" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #FF69B4;" text="Volver">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

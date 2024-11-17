@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="673.0" prefWidth="1029.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TablaPeliculasController">
+   <children>
+      <ImageView fitHeight="724.0" fitWidth="1033.0" layoutX="-4.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/fondoTablas.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9933c1" height="68.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="1013.0" />
+       <TableView fx:id="tablapeliculas" layoutX="19.2" layoutY="130.0" prefHeight="465.0" prefWidth="976.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="20.0">
+           <columns>
+               <TableColumn fx:id="colid" prefWidth="48.26667630672455" text="ID" />
+               <TableColumn fx:id="coltitulo" prefWidth="159.73331451416016" text="Titulo" />
+               <TableColumn fx:id="colgenero" prefWidth="105.33329772949219" text="Genero" />
+               <TableColumn fx:id="colaño" prefWidth="96.2666015625" text="Año" />
+               <TableColumn fx:id="coldescripcion" prefWidth="401.8666687011719" text="Descripcion" />
+            <TableColumn fx:id="coldirector" prefWidth="162.13323974609375" text="Director" />
+           </columns>
+       </TableView>
+      <HBox layoutX="130.0" layoutY="-1.0" prefHeight="70.0" prefWidth="378.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="175.0" text="Bienvenido:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="usuarioactualpeliculas" prefHeight="70.0" prefWidth="268.0" text="Usuario....">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="ivtablapeliculas" fitHeight="77.0" fitWidth="123.0" layoutX="6.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/login.png" />
+         </image></ImageView>
+      <FlowPane alignment="BASELINE_RIGHT" columnHalignment="CENTER" hgap="5.0" layoutX="739.0" layoutY="600.0" prefHeight="48.0" prefWidth="227.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#añadir" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #98FF98;" text="Añadir Pelicula">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#borrar" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #FF69B4;" text="Eliminar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <HBox alignment="CENTER_RIGHT" layoutX="918.0" layoutY="1.0" prefHeight="67.0" prefWidth="62.0">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="64.0" onMouseClicked="#salirApp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/salir.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

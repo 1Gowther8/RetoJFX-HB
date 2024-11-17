@@ -1,0 +1,148 @@
+/* Estilo base para el TableView */
+.table-view {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #6a0dad;
+    -fx-border-width: 2px;
+    -fx-padding: 5px;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: #6a0dad;
+}
+
+/* Estilo para las filas */
+.table-row-cell {
+    -fx-background-color: #f0e5ff; /* Fondo predeterminado de fila */
+    -fx-alternate-row-fill: #e8d5ff; /* Alternar color de fila */
+    -fx-text-fill: #333; /* Color de texto normal */
+}
+
+/* Hover para filas */
+.table-row-cell:hover {
+    -fx-background-color: #d6baff; /* Fondo morado claro al pasar el mouse */
+}
+
+/* Estilo para el encabezado */
+.table-view .column-header {
+    -fx-background-color: #a44de3, #9668d3; /* Fondo degradado para el encabezado */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* Cambiar el color de fondo al seleccionar una fila */
+.table-row-cell:selected {
+    -fx-background-color: #6a0dad; /* Fondo morado cuando se selecciona la fila */
+    -fx-text-fill: black; /* Texto negro cuando la fila está seleccionada */
+}
+
+/* Estilo para la barra de desplazamiento (scrollbar) */
+.table-row-cell:selected .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:selected .scroll-bar .thumb {
+    -fx-background-color: #6a0dad;
+    -fx-background-radius: 5px;
+}
+
+.table-row-cell:selected .scroll-bar .thumb:hover {
+    -fx-background-color: #5e0cb5; /* Color al pasar el mouse sobre la barra */
+}
+
+/* Estilo para los controles dentro del GridPane */
+.grid-pane {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+/* Estilo para los botones dentro del GridPane */
+.grid-pane .button {
+    -fx-background-color: #6a0dad;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.grid-pane .button:hover {
+    -fx-background-color: #5e0cb5;
+}
+
+.grid-pane .button:pressed {
+    -fx-background-color: #4a0a92;
+}
+
+/* Estilo general para el ChoiceBox */
+.choice-box {
+    -fx-background-color: #40E0D0;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+.choice-box:hover {
+    -fx-background-color: #5e0cb5;
+}
+
+.choice-box:focused {
+    -fx-background-color: #4a0a92;
+    -fx-border-color: #FFD700;
+}
+
+/* Estilo para la opción seleccionada en el ChoiceBox */
+.choice-box .list-cell:selected {
+    -fx-background-color: #6a0dad;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Estilo para los campos de texto (TextArea) en el GridPane 'detalles' */
+.detalles .text-area {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+
+/* Estilo general para el GridPane con la clase 'detalles' */
+.detalles {
+    -fx-background-color: #f4f4f9;
+    -fx-border-color: #D3D3D3;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-padding: 15px;
+    -fx-hgap: 15px;
+    -fx-vgap: 15px;
+}
+
+/* Estilo para los Label (etiquetas) dentro del GridPane */
+.detalles .label {
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+}
+
+/* Estilo para los campos de texto (TextField, TextArea) */
+.detalles .text-field, .detalles .text-area {
+    -fx-background-color: #fff;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+}
+
+/* Estilo al pasar el mouse sobre los campos de texto */
+.detalles .text-field:hover, .detalles .text-area:hover {
+    -fx-background-color: #f9f9f9;
+}

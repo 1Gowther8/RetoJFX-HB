@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700.0" maxWidth="1000.0" prefHeight="667.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TablaAñadirPeliculaController">
+   <children>
+      <ImageView fitHeight="723.0" fitWidth="1027.0" layoutX="-17.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/fondoTablas.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b52ce7" height="80.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+       <TableView fx:id="tablaPeliculasAñadir" layoutX="13.0" layoutY="98.0" prefHeight="439.0" prefWidth="997.0" style="-fx-background-color: lightblue; -fx-border-color: black; -fx-border-width: 0.5px; -fx-border-style: solid;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="14.0">
+           <columns>
+               <TableColumn fx:id="colid" text="ID" />
+               <TableColumn fx:id="coltitulo" text="Titulo" />
+               <TableColumn fx:id="colgenero" prefWidth="89.60003662109375" text="Genero" />
+               <TableColumn fx:id="colaño" prefWidth="86.39996337890625" text="Año" />
+               <TableColumn fx:id="coldescripcion" prefWidth="248.79995727539062" text="Descripcion" />
+            <TableColumn fx:id="coldirector" prefWidth="391.99993896484375" text="Director" />
+           </columns>
+       </TableView>
+      <HBox layoutX="136.0" layoutY="2.0" prefHeight="81.0" prefWidth="378.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="79.0" prefWidth="175.0" text="Bienvenido--&gt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="usuarioactualpeliculas" prefHeight="86.0" prefWidth="204.0" text="Usuario....">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="ivtablapeliculas" fitHeight="88.0" fitWidth="131.0" layoutX="-6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/login.png" />
+         </image></ImageView>
+      <FlowPane alignment="BASELINE_RIGHT" columnHalignment="CENTER" hgap="5.0" layoutX="769.0" layoutY="550.0" prefHeight="0.0" prefWidth="207.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Confirmar" prefHeight="20.0" prefWidth="88.0" style="-fx-background-color: #98FF98;" text="Confirmar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Volver" prefHeight="22.0" prefWidth="79.0" style="-fx-background-color: #FF69B4;" text="Volver">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <HBox alignment="CENTER_RIGHT" layoutX="903.0" layoutY="1.0" prefHeight="76.0" prefWidth="70.0">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="72.0" onMouseClicked="#salirApp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/salir.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="12.0" layoutY="544.0" prefHeight="112.0" prefWidth="340.0">
+         <children>
+            <GridPane prefHeight="98.0" prefWidth="340.0" style="-fx-background-color: purple;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.5999298095703" minWidth="10.0" prefWidth="95.33329010009766" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.33338165283203" minWidth="10.0" prefWidth="244.66670989990234" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="56.466650390625" minHeight="10.0" prefHeight="50.0666259765625" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="33.00003662109375" minHeight="10.0" prefHeight="28.7333740234375" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="89.0" text="Estado" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="39.0" prefWidth="90.0" text="Soporte" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="chestado" prefHeight="33.0" prefWidth="152.0" GridPane.columnIndex="1" />
+                  <ChoiceBox fx:id="chsoporte" prefHeight="36.0" prefWidth="151.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox layoutX="383.0" layoutY="543.0" prefHeight="48.0" prefWidth="396.0">
+         <children>
+            <Label fx:id="labelInfoAñadir" prefHeight="61.0" prefWidth="396.0" textFill="#00ff1a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

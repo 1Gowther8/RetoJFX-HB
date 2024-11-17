@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!--
+https://github.com/hibernate/dtd/blob/main/hibernate-configuration-3.0.dtd
+-->
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="connection.url">jdbc:mysql://localhost:3306/RetoJFXHB</property>
+        <property name="connection.username">root</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.password">pwd</property>
+        <!--property name="dialect">org.hibernate.dialect.MySQLDialect</property-->
+
+        <property name="show_sql">true</property>
+        <property name="hibernate.transaction.jta.platform">org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform</property>
+
+       <mapping class="modelos.Pelicula"/>
+        <mapping class="modelos.Copia"/>
+        <mapping class="modelos.Usuario"/>
+
+
+
+    </session-factory>
+</hibernate-configuration>

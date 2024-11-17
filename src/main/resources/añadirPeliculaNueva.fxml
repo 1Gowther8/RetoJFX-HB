@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.AñadirPeliculaNuevaController">
+   <children>
+      <ImageView fitHeight="704.0" fitWidth="997.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/fondoTablas.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9933c1" height="86.0" layoutX="-1.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="998.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9998984d" height="64.0" layoutX="356.0" layoutY="108.0" stroke="BLACK" strokeType="INSIDE" width="360.0" />
+      <HBox layoutX="167.0" layoutY="2.0" prefHeight="77.0" prefWidth="379.0">
+         <children>
+            <Label prefHeight="98.0" prefWidth="171.0" text="Bienvenido--&gt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="98.0" prefWidth="172.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="897.0" layoutY="3.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/salir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="152.0" layoutX="2.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/login.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="169.0" layoutY="192.0" prefHeight="410.0" prefWidth="659.0">
+         <children>
+            <GridPane prefHeight="425.0" prefWidth="706.0" style="-fx-background-color: #f5f5f5;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.666650390625" minWidth="0.0" prefWidth="137.733349609375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.266650390625" minWidth="10.0" prefWidth="522.266650390625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="168.9999755859375" minHeight="0.0" prefHeight="32.533328247070315" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="350.8" minHeight="10.0" prefHeight="30.20004272460939" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="433.06665649414066" minHeight="5.99997253417969" prefHeight="37.333349609375034" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="433.06665649414066" minHeight="10.0" prefHeight="79.66667480468752" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="433.06665649414066" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="433.06665649414066" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="70.0" prefWidth="156.0" text="Titulo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="68.0" prefWidth="153.0" text="Genero" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="72.0" prefWidth="166.0" text="Año" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="118.0" prefWidth="150.0" text="Descripción" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="75.0" prefWidth="147.0" text="Director" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tfDescripcion" maxWidth="480.0" prefHeight="118.0" prefWidth="462.0" promptText="Descripción de la pelicula" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfTitulo" maxWidth="480.0" prefHeight="38.0" prefWidth="457.0" promptText="Titulo de la pelicula" GridPane.columnIndex="1" />
+                  <TextField fx:id="tfAño" maxWidth="480.0" prefHeight="34.0" prefWidth="466.0" promptText="Genero Año" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfDirector" maxWidth="480.0" prefHeight="34.0" prefWidth="462.0" promptText="Director de la pelicula" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ChoiceBox fx:id="chGenero" prefHeight="34.0" prefWidth="246.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <FlowPane alignment="CENTER_RIGHT" hgap="8.0" maxWidth="480.0" prefHeight="70.0" prefWidth="251.0" vgap="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="infoAñadirPeliculas" alignment="CENTER" prefHeight="34.0" prefWidth="307.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#confirmar" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #98FF98;" text="Confirmar">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#limpiar" style="-fx-background-color: FFD700;" text="Limpiar">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <FlowPane.margin>
+                              <Insets />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#volver" style="-fx-background-color: #FF69B4;" text="Volver">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </FlowPane>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="352.0" layoutY="99.0" prefHeight="77.0" prefWidth="367.0" text="Añadir Pelicula" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
