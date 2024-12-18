@@ -66,4 +66,59 @@ public class Pelicula implements Serializable {
                 '}';
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public Integer getAño() {
+        return año;
+    }
+
+    public void setAño(Integer año) {
+        this.año = año;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public List<Copia> getCopias() {
+        return copias;
+    }
+
+    public void setCopias(List<Copia> copias) {
+        this.copias = copias;
+    }
 }

@@ -1,4 +1,4 @@
-package modelos;
+package Utilidades;
 
 import lombok.Data;
 

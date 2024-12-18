@@ -1,5 +1,7 @@
 package dao;
 
+import Utilidades.Sesion;
+import com.example.aplicacion.HibernateUtil;
 import modelos.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

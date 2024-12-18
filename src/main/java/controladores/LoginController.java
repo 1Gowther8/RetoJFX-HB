@@ -11,8 +11,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import modelos.HibernateUtil;
-import modelos.Sesion;
+import com.example.aplicacion.HibernateUtil;
+import Utilidades.Sesion;
 import org.hibernate.SessionFactory;
 
 import java.io.IOException;

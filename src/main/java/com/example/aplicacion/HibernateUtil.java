@@ -1,4 +1,4 @@
-package modelos;
+package com.example.aplicacion;
 
 import lombok.Data;
 import org.hibernate.SessionFactory;

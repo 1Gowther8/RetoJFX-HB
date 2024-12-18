@@ -16,13 +16,13 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import modelos.Copia;
 import modelos.Pelicula;
-import modelos.Sesion;
+import Utilidades.Sesion;
 import modelos.Usuario;
 import org.hibernate.Session;
 
 import java.io.IOException;
 
-import static modelos.HibernateUtil.sessionFactory;
+import static com.example.aplicacion.HibernateUtil.sessionFactory;
 
 public class TablaAñadirPeliculaController {
         @FXML

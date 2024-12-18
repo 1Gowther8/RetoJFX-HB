@@ -1,23 +1,14 @@
 package com.example.aplicacion;
 
 import Utilidades.Rutas;
-import dao.CopiaDao;
-import dao.PeliculaDao;
-import dao.UsuarioDAO;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import modelos.HibernateUtil;
-import modelos.Pelicula;
-import org.hibernate.SessionFactory;
 
 
 import java.io.IOException;
-import java.util.List;
 
 
 public class App extends Application {

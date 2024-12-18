@@ -13,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import modelos.Copia;
 import modelos.Pelicula;
-import modelos.Sesion;
+import Utilidades.Sesion;
 
 import java.io.IOException;
 

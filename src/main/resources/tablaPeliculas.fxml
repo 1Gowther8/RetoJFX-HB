@@ -48,7 +48,7 @@
          <image>
             <Image url="@imagenes/login.png" />
          </image></ImageView>
-      <FlowPane alignment="BASELINE_RIGHT" columnHalignment="CENTER" hgap="5.0" layoutX="739.0" layoutY="600.0" prefHeight="48.0" prefWidth="227.0">
+      <FlowPane alignment="BASELINE_RIGHT" columnHalignment="CENTER" hgap="5.0" layoutX="712.0" layoutY="597.0" prefHeight="48.0" prefWidth="227.0">
          <children>
             <Button mnemonicParsing="false" onAction="#añadir" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #98FF98;" text="Añadir Pelicula">
                <font>
@@ -71,5 +71,20 @@
             </ImageView>
          </children>
       </HBox>
+      <Button layoutX="19.0" layoutY="596.0" mnemonicParsing="false" onAction="#generarListadoPeliculasPDF" style="-fx-background-color: yellow;" text="Listado Peliculas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="149.0" layoutY="596.0" mnemonicParsing="false" onAction="#reportePeliculasMalEstado" style="-fx-background-color: #FF69B4;" text="Ver Peliculas en Mal Estado">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="61.0" layoutY="630.0" mnemonicParsing="false" onAction="#ReportePeliculasMas1Copia" prefHeight="30.0" prefWidth="175.0" style="-fx-background-color: #98FF98;" text="Peliculas para vender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

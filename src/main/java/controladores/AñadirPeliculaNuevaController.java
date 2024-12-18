@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.List;
 
-import static modelos.HibernateUtil.sessionFactory;
+import static com.example.aplicacion.HibernateUtil.sessionFactory;
 
 public class AñadirPeliculaNuevaController {
 

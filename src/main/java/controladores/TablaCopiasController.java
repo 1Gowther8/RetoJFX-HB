@@ -1,6 +1,8 @@
 package controladores;
 
 import Utilidades.Rutas;
+import Utilidades.Sesion;
+import com.example.aplicacion.HibernateUtil;
 import dao.CopiaDao;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
@@ -26,7 +28,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Optional;
 
-import static modelos.HibernateUtil.sessionFactory;
+import static com.example.aplicacion.HibernateUtil.sessionFactory;
 
 public class TablaCopiasController {
 
